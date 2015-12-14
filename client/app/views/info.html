@@ -1,0 +1,19 @@
+<a class="btn btn-info" href="/#/create/info"><span class="glyphicon glyphicon-th-list"></span> Add Information</a>
+<table class="table table=striped">
+  <thead> 
+  <th>Age</th> 
+  <th>ID</th> 
+  </thead> 
+  <tbody> 
+   <tr ng-repeat= "info in info">  
+    <td><a ng-href="/#/info/{{ info._id }}">{{ info.age }}</a></td> 
+    <td>{{ info.id }}</td> 
+    <td>
+      <div class="button-group">
+        <a ng-href="/#/info/{{ info._id }}/edit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a ng-href="/#/info/{{ info._id }}/delete" class="btn btn-warning"><span class="glyphicon glyphicon-minus"></span></a>
+      </div>
+    </td>
+    </tr> 
+  </tbody> 
+</table>
